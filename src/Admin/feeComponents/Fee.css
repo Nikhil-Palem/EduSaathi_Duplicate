@@ -1,0 +1,119 @@
+/* Main Container */
+.fee-container {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+/* Heading */
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Steps arranged in a row */
+.steps-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+.step {
+    flex: 1;
+    background-color: #305252;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+}
+.step p:first-child {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+/* Light background for input field */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.input-container label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #305252;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-container button:hover {
+    background-color: #223939;
+}
+@media screen and (max-width:768px) {
+    .fee-container{
+        margin: 12px;
+        width:90% !important;
+    }
+    .steps-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: none;
+    }
+
+    .step {
+        width: 100%;
+    }
+    .input-container{
+        width: 80%;
+    }
+    .input-container input {
+        width: 100%;
+    }
+}

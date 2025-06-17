@@ -1,0 +1,83 @@
+.branches-container {
+    padding: 70px;
+    background-color: #f9f9f9;
+    /* Account for the navbar by reducing height */
+    height: (100v-64px);
+    overflow-y: hidden;
+}
+
+.branches-table-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.branches-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.branches-table th {
+    background-color: #f4f6f8;
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+
+.sortable-header {
+    cursor: pointer;
+    user-select: none;
+}
+
+.sort-icon {
+    margin-left: 8px;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+}
+
+.branches-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #eaeaea;
+    text-align: left;
+    /* Left alignment for cell values */
+}
+
+.branches-table tr:last-child td {
+    border-bottom: none;
+}
+
+.branches-table tr {
+    transition: all 0.2s ease;
+}
+
+.branches-table tbody tr:hover {
+    background-color: #f0f7ff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.arrow-cell {
+    width: 60px;
+    text-align: center;
+}
+
+.arrow-icon {
+    display: inline-block;
+    font-size: 18px;
+    color: #4a90e2;
+    cursor: pointer;
+    transition: transform 0.2s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.arrow-icon:hover {
+    transform: translateX(3px);
+    background-color: #edf5ff;
+}

@@ -1,0 +1,129 @@
+.universities-section {
+  padding: 50px 20px;
+  text-align: center;
+  /* Center the entire section */
+}
+
+.universities-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.universities-section h2 span {
+  font-weight: bolder;
+}
+
+.universities-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  /* Ensure that cards wrap on smaller screens */
+}
+
+.university-card {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  padding: 0px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  /* Stack the content vertically */
+  transition: transform 0.3s ease;
+  /* Smooth scale transition */
+}
+
+.university-card:hover {
+  transform: scale(1.02);
+}
+
+.media-container {
+  width: 100%;
+  height: 75%;
+}
+
+.university-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Zoom transition */
+}
+
+.university-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.university-card:hover .university-image {
+  opacity: 0.9;
+  transform: scale(1.01);
+  /* Subtle zoom effect when the image is hidden */
+}
+
+.university-card:hover .university-video {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.university-info {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  /* Separate the info section from the image */
+}
+
+.university-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.university-info p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.btn-more {
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  width: 10%;
+}
+
+.btn-more:hover {
+  background-color: #ff5722;
+  /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+  .universities-container {
+    flex-direction: column;
+    gap: 10px;
+    /* Reduce the gap on smaller screens */
+  }
+
+  .university-card {
+    width: 90%;
+    max-width: 400px;
+    /* Make cards more responsive */
+  }
+}

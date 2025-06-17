@@ -1,0 +1,57 @@
+.exams-section {
+  padding: 50px 20px;
+}
+
+.exams-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.exams-header h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.view-all {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exams-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.exam-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+.exam-card:hover {
+  transform: scale(1.1); /* Slightly enlarge the card */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for a floating effect */
+}
+
+.exam-logo {
+  width: 100%;
+  height: auto;
+}
+
+.exam-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}

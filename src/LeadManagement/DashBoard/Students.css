@@ -1,0 +1,104 @@
+.students-div{
+    margin-top: 80px;
+    margin-bottom: 55px;
+}
+
+.student-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.student-top .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 30px;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header .MuiSvgIcon-root {
+    font-size: 7rem;
+    cursor: pointer;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    /* margin-left: 17rem; */
+    padding-left: 9rem;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.social-media-icons .MuiSvgIcon-root {
+    font-size: 2rem;
+    cursor: pointer;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.social-media-icons .MuiSvgIcon-root:hover {
+    color: black;
+}
+
+.student-bottom {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    flex-direction: row;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    gap: 50px;
+}
+
+.student-bottom div {
+    flex: 1 1;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.stu-form-group label {
+    width: 100% !important;
+    text-align: left;
+}
+
+/* Style the input fields */
+.stu-form-group input {
+    width: 100%;
+    /* Full width of the input field */
+    padding: 8px;
+    /* Add padding inside the input field */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 14px;
+    /* Adjust font size */
+    color: gray;
+    /* Make the text inside the input field gray */
+    background-color: #f9f9f9;
+    /* Light background color */
+    pointer-events: none;
+    /* Disable focus and interaction */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+}
+
+/* Prevent focus outline */
+.stu-form-group input:focus {
+    outline: none;
+    /* Remove focus outline */
+    border: 1px solid #ccc;
+    /* Keep the border consistent */
+}

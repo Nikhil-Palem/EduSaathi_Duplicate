@@ -1,0 +1,286 @@
+.auth-signin-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.facebook-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.facebook-login-button:hover {
+    background-color: #145dbf;
+}
+
+.facebook-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #555;
+    font-size: 14px;
+    width: 100%;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    background-color: none;
+}
+
+.auth-form {
+    max-width: 100%;
+    /* Allow the form to take full width of its container */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* Stack input fields vertically */
+
+    margin: 0 auto;
+    /* Center the form horizontally */
+    padding: 0 20px;
+    /* Add padding inside the form */
+    box-sizing: border-box;
+    /* Include padding in width/height calculations */
+    gap: 0;
+}
+
+/* Style the input fields and select dropdown */
+input,
+select {
+    width: 100%;
+    /* Ensure input fields take full width of the form */
+    max-width: 100%;
+    /* Prevent overflow */
+    padding: 10px;
+    /* Add padding inside input fields */
+    margin: 0;
+    /* Remove default margin */
+    border: 1px solid #ccc;
+    /* Add a border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    font-size: 14px;
+    /* Adjust font size */
+    box-sizing: border-box;
+    /* Include padding in width/height calculations */
+}
+
+
+.auth-form button[type="submit"] {
+    width: 100%;
+    /* Make the button take full width */
+    padding: 10px;
+    /* Add padding inside the button */
+    background-color: #162D3A;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    font-size: 16px;
+    /* Adjust font size */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.auth-form button[type="submit"]:hover {
+    background-color: #111b22;
+    /* Darken button color on hover */
+}
+
+/* Form group container */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Label styling */
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.2s ease;
+    background-color: white;
+    pointer-events: none;
+    /* Prevent the label from being clicked */
+}
+
+/* When the input is focused or has a value, move the label to the top */
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label {
+    top: 0;
+    font-size: 12px;
+    padding: 5px;
+    color: #007bff;
+}
+
+/* Add focus effect to the input field */
+.form-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.auth-options {
+    max-width: 93%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the Google and Facebook buttons */
+.auth-options button {
+    width: 100%;
+    /* Make the buttons take full width */
+    padding: 10px;
+    /* Add padding inside the buttons */
+    font-size: 16px;
+    /* Adjust font size */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Style the Google button */
+.auth-options .google-login-button {
+    background-color: #4285f4;
+    /* Google blue */
+    color: white;
+    /* White text */
+}
+
+/* Style the Facebook button */
+.auth-options .facebook-login-button {
+    background-color: #1877f2;
+    /* Facebook blue */
+    color: white;
+    /* White text */
+}
+
+/* Add hover effects */
+.auth-options .google-login-button:hover {
+    background-color: #357ae8;
+    /* Darker Google blue */
+}
+
+.auth-options .facebook-login-button:hover {
+    background-color: #145dbf;
+    /* Darker Facebook blue */
+}
+
+
+.auth-options .google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285f4;
+    /* Google blue */
+    color: white;
+    /* White text */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    /* Make the button take full width */
+    text-align: center;
+}
+
+/* Add hover effect for Google button */
+.auth-options .google-login-button:hover {
+    background-color: #357ae8;
+    /* Darker Google blue */
+}
+
+/* Style the Google icon */
+.google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.auth-signin-div img {
+    height: 45%;
+}
+
+.forgot-pswd a {
+    /* width: 100%; */
+    display: flex;
+    font-size: 12px;
+    color: #3434edfa;
+    font-weight: 100;
+}
+.error-text{
+    margin-top: 10px;
+}

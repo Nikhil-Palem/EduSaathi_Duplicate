@@ -1,0 +1,143 @@
+.select-college-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+.select-college-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.select-college-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.select-college-label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    align-self: flex-start;
+    display: flex;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-college-search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+.select-college-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 16px;
+}
+
+.select-college-input {
+    width: 100%;
+    padding: 10px 12px 10px 36px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.select-college-input:focus {
+    border-color: #4285f4;
+}
+
+.suggestions-list {
+    position: relative;
+    top: 101%;
+    left: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    max-height: 220px;
+    overflow-y: auto;
+    margin-top: -1px;
+    padding: 0;
+    list-style: none;
+    width: 99.8%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap:0;
+}
+
+.suggestions-list li {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 15px;
+    color: #333;
+    width: 100%;
+    text-align: left;
+    padding-left: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f4;
+    box-sizing: border-box;
+}
+
+.suggestions-list li:hover {
+    background-color: #f1f3f4;
+}
+
+.select-college-error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.select-branch-container {
+    margin-top: 30px;
+}
+
+.select-college-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.select-college-dropdown:focus {
+    border-color: #4285f4;
+}
+
+.select-college-input.has-suggestions {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

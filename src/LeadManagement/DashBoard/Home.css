@@ -1,0 +1,175 @@
+.lead-management-page {
+    /* Removed background color */
+    margin-top: 80px; /* Add gap for the fixed navbar */
+    display: flex;
+    flex-direction: column;
+    /* Removed height and overflow to fit content height */
+}
+
+.lead-header {
+    flex: 0 0 auto;
+}
+
+.dashboard-content {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    /* Removed overflow to fit content */
+}
+
+.data-boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.data-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.data-box h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.data-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4a90e2;
+    margin-bottom: 0.25rem;
+}
+
+.data-description {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamically adjust columns */
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: auto; /* Remove fixed height */
+}
+
+.chart-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 1cap rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto; /* Fit content height */
+}
+
+.funnel-chart-box {
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.funnel-title {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.funnel-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.funnel-segment {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s;
+    background-color: #000000 !important;
+    min-height: 35px;
+    padding: 4px 0;
+}
+
+.funnel-segment:hover {
+    transform: translateX(5px);
+    opacity: 0.9;
+}
+
+.funnel-label {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 0 10px;
+    font-size: 0.9rem;
+}
+
+.funnel-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+    max-width: 75%;
+    line-height: 1.2;
+    padding-right: 8px;
+}
+
+.funnel-percent {
+    font-weight: 700;
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+.lead-footer {
+    flex: 0 0 auto;
+    margin-top: auto;
+}
+
+.animated-funnel {
+    animation: slide-in 0.8s ease-out forwards;
+    transform: translateX(-100%);
+}
+
+@keyframes slide-in {
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes flow {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(30px, 0) scale(0);
+        opacity: 0;
+    }
+}

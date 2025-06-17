@@ -1,0 +1,51 @@
+/* General Toast Styling */
+.Toastify__toast {
+    font-size: 14px;
+    /* Smaller text for a professional look */
+    padding: 12px 18px;
+    /* Better spacing */
+    min-width: 280px;
+    border-radius: 8px;
+    position: relative;
+    /* Ensures close button is placed properly */
+}
+
+/* Toast Close Button (Wrong Mark 'X') */
+.Toastify__close-button {
+    font-size: 12px !important;
+    /* Smaller size */
+    position: absolute;
+    right: -54px;
+    /* left: 81%; */
+    top: 3px;
+    transform: translateY(-50%);
+    color: white !important;
+    /* Ensures visibility */
+    background-color: transparent !important;
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+    background-color: #ff4d4f !important;
+    /* Red error background */
+    color: white !important;
+}
+
+/* Success Toast */
+.Toastify__toast--success {
+    background-color: #4caf50 !important;
+    /* Green success background */
+    color: white !important;
+}
+
+/* Fix Icon & Background Color Issue */
+.Toastify__toast-icon svg {
+    fill: white !important;
+    /* Ensures icon color contrasts well */
+}
+
+/* Timeline Line Below Toast */
+.Toastify__progress-bar {
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    /* Semi-transparent white */
+}

@@ -1,0 +1,81 @@
+.latest-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  border-top: 1px solid #000;
+  /* Add top border to separate from previous section */
+}
+
+.latest-container,
+.discover-container {
+  width: 48%;
+}
+
+.latest-container h2,
+.latest-container p,
+.latest-container h3  {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.latest-container h2,
+.discover-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.latest-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.latest-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: #000;
+  margin: 0 20px;
+}
+.discover-container h2,
+.discover-container p{
+  text-align: start;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.discover-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.discover-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.discover-item p {
+  font-size: 14px;
+  color: #333;
+}

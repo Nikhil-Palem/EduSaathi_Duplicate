@@ -1,0 +1,83 @@
+.select-college-box-admin {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    min-height: 100vh;
+  }
+  
+  .select-college-container-admin {
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%; 
+    max-width: 450px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .select-college-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .select-college-label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .select-college-search-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .select-college-search-icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    color: #888;
+  }
+  
+  .select-college-input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* --- Professional Separator --- */
+  .separator-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .separator-line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .separator-text {
+    margin: 0 10px;
+    color: #666;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .add-college-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .add-college-button:hover {
+    background-color: #333;
+  }
+  

@@ -1,0 +1,173 @@
+.profile-card {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.profile-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.profile-info p {
+    margin: 6px 0;
+    font-size: 23px;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loading-text {
+    width: 50px;
+    aspect-ratio: 1;
+    padding: 8px;
+    border-radius: 50%;
+    background: #121111;
+
+    /* Create a conic-gradient mask to make a spinning ring */
+    --_m: conic-gradient(#0000 10%, #cfcfcf);
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+
+    animation: l3 1s linear infinite;
+}
+
+@keyframes l3 {
+    to {
+        transform: rotate(1turn);
+    }
+}
+.custom-file-upload {
+    /*display: inline-block;*/
+    padding: 8px 16px;
+    position: absolute;
+    top: 46%;
+    left: 46%;
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #090909;
+}
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+
+.edit-btn, .save-btn {
+    margin-top: 16px;
+    padding: 8px 16px;
+
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: black;
+}
+
+.edit-input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+}
+
+.popup-box {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.popup-options button {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 14px;
+    font-size: 14px;
+    background: #090909;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.popup-options button:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+}
+
+.cancel-btn {
+    margin-top: 15px;
+    background-color: #ccc;
+    color: black;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    background-color: #999;
+}
+
+@media (max-width: 768px) {
+    .custom-file-upload {
+        left: 30%;
+    }
+}

@@ -1,0 +1,12 @@
+:root{
+    --background-admin-panel: #F5F4F1;
+    --background-admin-button: #000000;
+
+}
+
+section{
+    display: flex;
+}
+.all-section-color{
+    background-color: var(--background-admin-panel);
+}

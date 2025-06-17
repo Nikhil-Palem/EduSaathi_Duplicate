@@ -1,0 +1,40 @@
+.tracking-container {
+    display: flex;
+    align-items: center;
+    margin-top: 160px;
+  }
+  
+  .tracking-line {
+    position: relative;
+    width: 2px;
+    height: 100%;
+    margin-right: 30px;
+    background: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: left;
+    background-size: 2px 10px; /* Adjust the second value to increase/decrease the space between dots */
+    background-repeat: repeat-y;
+    margin-left: 20px; /* Adjust for left positioning */
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(0,0,0,0.1) ;
+    position: absolute;
+    left: -5.8px; /* Centering the circles on the line */
+  }
+  
+  .circle:nth-child(1) { top: 4%; }
+  .circle:nth-child(2) { top: 15%; }
+  .circle:nth-child(3) { top: 26%; }
+  .circle:nth-child(4) { top: 37%; }
+  .circle:nth-child(5) { top: 48.5%; }
+  .circle:nth-child(6) { top: 59.5%; }
+  .circle:nth-child(7) { top: 71%; }
+  .circle:nth-child(8) { top: 82%; }
+  .circle:nth-child(9) { top: 94%; }
+
+  

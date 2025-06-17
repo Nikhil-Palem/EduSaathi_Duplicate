@@ -1,0 +1,318 @@
+.admin-sidebar-main .dashboard {
+  margin-left: 220px;
+  /* Align with the sidebar width */
+  padding-top: 200px;
+  /* Adjusted padding to accommodate the logo */
+  background-color: #f5f5f5;
+  /*padding: 20px;*/
+  min-height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.admin-sidebar-main .content {
+  margin-top: 60px;
+  /* Add spacing for the content below the logo */
+  flex-grow: 1;
+  /* Pushes the footer to the bottom */
+}
+
+.welcome {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.no-universities {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #777;
+}
+
+.universities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.university-card {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.university-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.university-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.university-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.university-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.university-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.arrow {
+  font-size: 20px;
+  margin-left: auto;
+  color: #333;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #000;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.load-more-button {
+  color: #d9534f;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.load-more-button:hover {
+  color: #c9302c;
+}
+
+/* AdminSidebar.css */
+
+.admin-sidebar-main {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  background-color: #f5f4f1;
+  padding-top: 10px;
+  z-index: 100;
+  border-right: 1px solid #000;
+  color: black;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: width 0.3s ease, padding 0.3s ease;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 10px 0 10px 17px;
+  /* margin: 0px 10px; */
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  /*text-decoration: none;*/
+}
+
+.menu-item span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+
+.menu-item.active {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.signout-btn {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  margin-top: 21px;
+}
+
+.signout-btn button {
+  background-color: #d9534f;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-sidebar-main {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, padding 0.3s ease;
+    border-right: none;
+  }
+
+  .admin-sidebar-main.expanded {
+    max-width: 235px;
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid gray;
+  }
+
+  .brand img {
+    height: 30px;
+    filter: invert(1);
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .admin-sidebar-main .sidebar-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .admin-sidebar-main .menu-icon {
+    font-size: 14px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .admin-sidebar-main .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .admin-sidebar-main.expanded .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    width: 180px;
+  }
+
+  .admin-sidebar-main.expanded .menu-text {
+    display: inline;
+  }
+
+  .admin-sidebar-main .menu-text {
+    display: none;
+  }
+
+  .admin-sidebar-main .dropdown-header {
+    width: 100%;
+  }
+
+  .hamburger-icon {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .hamburger-icon div:nth-child(2) {
+    width: 18px !important;
+  }
+
+  .hamburger-icon.expanded {
+    transform: translateX(240px);
+  }
+
+  .signout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    margin-top: 21px;
+    width: 100%;
+  }
+
+  .signout-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  .hamburger-icon .white div {
+    color: white;
+  }
+
+  .hamburger-icon.white div {
+    background-color: white;
+    /* Change color to white */
+  }
+}

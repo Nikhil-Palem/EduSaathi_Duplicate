@@ -1,0 +1,170 @@
+.tasks-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.task-section {
+    width: 600px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+
+
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.status-dropdown {
+    position: relative;
+}
+
+.status-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Circle Icon */
+.status-icon {
+    width: 20px; /* Adjust the size of the circle */
+    height: 20px;
+    border-radius: 50%;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #e8e8e8; /* Default background color */
+    position: relative; /* Ensure proper positioning for inner elements */
+}
+
+/* Dot for "To Do" and "In Progress" */
+.status-dot {
+    width: 8px; /* Size of the dot */
+    height: 8px;
+    border-radius: 50%;
+    background-color: white; /* Dot color */
+}
+
+/* Tick Mark for "Completed" */
+.status-check {
+    color: white; /* Tick color */
+    font-size: 12px; /* Adjust size of the tick */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-text {
+    font-size: 12px;
+    color: #555;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    min-width: 150px;
+    padding: 5px 0;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+.view-all {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #555;
+}
+
+.view-all:hover {
+    color: #3c3b3b;
+    background-color: #f5f5f5;
+}
+
+.add-task {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.add-task button {
+    padding: 8px 12px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* width: 100%; */
+    padding: 8px;
+    justify-content: center;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #555;
+    justify-self: end;
+}
+
+.add-btn:hover {
+    background: #f5f5f5;
+}

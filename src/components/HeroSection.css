@@ -1,0 +1,125 @@
+.hero-container {
+  background-color: white;
+  /* Ensure background color matches the design */
+  display: flex;
+  justify-content: space-between;
+  /* Align items at the start horizontally */
+  align-items: center;
+  padding: 20px;
+  padding-top: 165px;
+  position: relative;
+  /* To position the vertical text correctly */
+}
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.hero-content p {
+  display: flex;
+  text-align: left;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.vertical-text-container {
+  display: flex;
+  flex-direction: row;
+  /* Arrange "EDU" and "SAATHI" side by side */
+  align-items: center;
+  /* Center items vertically */
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 70%;
+  height: 100%;
+  padding: 20px;
+  z-index: 1001;
+  gap: 10px;
+}
+
+.vertical-text-container .edu,
+.vertical-text-container .saathi {
+  display: flex;
+  /* Use flexbox for vertical stacking */
+  flex-direction: column;
+  /* Stack letters vertically */
+  align-items: center;
+  /* Center letters horizontally */
+  font-size: 96px;
+  /* Same size for both "EDU" and "SAATHI" */
+  font-weight: bold;
+}
+
+.vertical-text-container .edu span,
+.vertical-text-container .saathi span {
+  color: black;
+  /* Style for individual letters */
+  margin: 5px 0;
+  /* Add spacing between letters */
+}
+
+
+.vertical-text-container .saathi {
+  font-size: 48px;
+  /* Smaller size for "SAATHI" */
+  font-weight: normal;
+
+}
+
+.hero-content .btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  border: 2px solid black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content .btn:hover {
+  color: black;
+  background: none;
+}
+
+.hero-container a {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width:768px) {
+  .vertical-text-container {
+    position: unset;
+    display: flex;
+    z-index: 0;
+  }
+
+  .hero-container {
+    padding-top: 100px;
+    /* width: 100%; */
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+    text-align: left;
+  }
+  .hero-container p{
+    font-size: 14px;
+  }
+  
+}

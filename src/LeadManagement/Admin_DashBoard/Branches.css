@@ -1,0 +1,65 @@
+.branches-container {
+    width: 99%;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin-top: 80px;
+  }
+  .branches-table {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 99.9%;
+  }
+  
+  .branches-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    padding: 12px 16px;
+    font-weight: 600;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .branches-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s;
+  }
+  
+  .branches-row:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .branch-name, .branch-leads {
+    flex: 1;
+  }
+  
+  .branch-leads {
+    text-align: center;
+  }
+  
+  .branch-arrow {
+    width: 24px;
+    text-align: right;
+  }
+  .loading{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .animationloading svg{
+    width:60% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loading p{
+    margin: 0;
+    padding: 0;
+  }

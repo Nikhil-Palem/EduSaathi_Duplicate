@@ -1,0 +1,186 @@
+.student-dashboard {
+  margin-left: 252px;
+  background-color: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  max-height: calc(100vh - 70px);
+  padding: 0px 20px;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.student-dashboard .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  /* margin-top: 10px; */
+  height: 100%;
+  margin: 0;
+  padding-top:20px ;
+}
+
+.welcome {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.no-universities {
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #777;
+}
+
+.universities-list-stu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.university-card-stu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  height: 110px;
+  cursor: default;
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.university-card-stu:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.university-card-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.university-logo-stu {
+  height: 60px;
+  width: auto;
+}
+
+.university-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 20px;
+  text-align: right;
+  font-size: 14px;
+  color: #555;
+}
+
+.arrow-stu {
+  font-weight: bold;
+}
+
+.load-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.load-more-button {
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.load-more-button:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icon {
+  margin-left: 5px;
+  font-size: 18px;
+}
+.in-progress {
+  color: rgb(117, 117, 220);
+}
+.incomplete {
+  color: red;
+}
+
+.in-progress-bg{
+  background-color: rgb(117, 117, 220);
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.incomplete-bg {
+  background-color: red;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+.complete-bg{
+  background-color: rgb(23, 136, 23);
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .student-dashboard {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .welcome {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+
+  .university-card-stu {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .university-card-left {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .university-card-right {
+    text-align: left;
+    padding-right: 0;
+    margin-top: 10px;
+  }
+  .student-dashboard .content{
+    padding: 20px 0px 0 0;
+  }
+}

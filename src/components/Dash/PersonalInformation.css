@@ -1,0 +1,49 @@
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+.personal-info label{
+    text-align: left;
+    width: 50%;
+}
+.personal-info input{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.personal-info select{
+    width: 52%;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.custom-category{
+    width: 52%;
+    text-align: left;
+}
+.custom-category input{
+    width: 97%;
+}
+.custom-category label{
+    text-align: left;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .personal-info label {
+        width: 100%;
+    }
+    .personal-info input {
+        width: 100%;
+    }
+    .personal-info select {
+        width: 100%;
+    }
+    .custom-category input {
+        width: 100%;
+    }
+    .custom-category label {
+        width: 100%;
+    }
+}

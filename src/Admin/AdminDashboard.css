@@ -1,0 +1,256 @@
+.admin-dashboard {
+    background-color: var(--background-admin-panel);
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.admin-dashboard .content {
+    margin-left: 240px;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.admin-dashboard h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left !important;
+    padding-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.chart-section {
+    width: 100%;
+    position: relative;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.chart-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* height: 300px; */
+}
+
+.pie-chart-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 250px;
+}
+
+.chart-card canvas {
+    max-height: 100%;
+    width: 100%;
+}
+
+.chart-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chart-card h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.bottom-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.notifications {
+    width: 25%;
+    max-height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+    margin-top: 20px;
+}
+
+.notifications h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.notification-list li {
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+}
+
+.notification-list li:hover {
+    background-color: #f9f9f9;
+}
+
+.student-lookup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.student-lookup h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-field1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #cbc6c6;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.input-field1 input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-field1:focus-within {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.input-field1 span {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.input-field1 span:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .chart-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    /* .chart-card {
+        height: 250px;
+    } */
+
+    .notifications {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* .chart-card {
+        height: 200px;
+    } */
+
+    .notifications {
+        width: 80%;
+    }
+
+    .student-lookup {
+        max-width: 100%;
+    }
+    .admin-dashboard .content{
+        margin: 0;
+    }
+}

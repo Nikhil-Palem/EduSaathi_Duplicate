@@ -1,0 +1,111 @@
+.form-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    overflow-y: auto;
+    /* Add this line */
+    max-height: calc(100vh - 70px);
+    /* Add this line */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form-container .school_count {
+    display: flex;
+    max-width: 600px;
+    flex: 1;
+}
+
+.school_count input {
+    flex: 9;
+}
+
+.school_count select {
+    flex: 1;
+}
+
+.school-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    background: none;
+    box-shadow: none;
+}
+
+.school-form label {
+    text-align: left;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.grade-section {
+    margin-top: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.grade-section label {
+    text-align: left;
+    width: 100%;
+}
+
+.grade-section input {
+    width: 100%;
+}
+
+.file-upload {
+    padding: 15px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+@media screen and (max-width: 768px) {
+    .form-container {
+        padding: 0;
+        margin-bottom: 15px;
+
+    }
+
+    .school-form {
+        padding: 0;
+    }
+
+    .file-upload {
+        box-sizing: border-box;
+    }
+}

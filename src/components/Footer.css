@@ -1,0 +1,147 @@
+.footer {
+  background-color: black;
+  color: white !important;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer * {
+  color: white;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo img {
+  width: 50px;
+}
+
+.footer-terms {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-terms p {
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-terms p:hover {
+  text-decoration: underline;
+  color: #f39c12;
+  cursor: pointer;
+}
+
+.landing-footer-hr {
+  width: 70%;
+  border: none;
+  border-top: 1px solid white;
+  margin: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+  margin: 10px 0px;
+}
+
+.footer-section a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.2);
+  color: #f39c12;
+}
+
+.footer-section p {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 13px 0px;
+  cursor: pointer;
+}
+
+.footer-section p:hover {
+  color: gainsboro;
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-logo {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .footer-logo img {
+    width: 40px;
+  }
+
+  .footer-terms {
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .landing-footer-hr {
+    width: 90%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-section p {
+    justify-content: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}

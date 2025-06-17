@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Heading styles */
+h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Input field styles */
+.input-field {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    /* Prevent input fields from growing too wide */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea styles */
+.textarea-field {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    height: 100px;
+    max-height: 150px;
+    min-height: 100px;
+    min-width: 600px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    outline: none;
+    
+    margin-right: 150px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+.textarea-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styles */
+.add-button, .delete-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    width: 100px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 51px;
+    padding: 0;
+    margin: 0;
+    width: 45px;
+}
+.delete-button {
+    background-color: #ff4d4d;
+}
+
+.add-button:hover, .delete-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+/* .add-button:hover, .delete-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+/* Add spacing between sections */
+.container>h1:not(:first-of-type) {
+    margin-top: 30px;
+}
+@media screen and (max-width:768px) {
+    .textarea-field{
+        min-width: 0 !important;
+        margin: 0;
+    }
+}

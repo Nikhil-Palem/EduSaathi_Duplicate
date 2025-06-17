@@ -1,0 +1,87 @@
+/* ApplicationStatus.css */
+.app-status {
+    padding: 20px;
+}
+
+.no-universities {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.no-universities p {
+    font-size: 18px;
+    color: #555;
+}
+
+.no-universities a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.no-universities a:hover {
+    text-decoration: underline;
+}
+
+.app-status-university {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.app-status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.app-status-header p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(90deg);
+}
+
+.dropdown-content-app-status {
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 10px;
+    margin: 5px 0;
+    color: #151212;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+.btn-status{
+    background-color: black;
+    color: white;
+    border: 0.5mm solid black;
+
+}
+.btn-status:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 0.5mm solid black;
+
+}

@@ -1,0 +1,51 @@
+/* General styling for the deadline section */
+.deadline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full viewport height */
+    margin-left: 220px;
+    padding: 20px 0;
+}
+
+/* Container for the deadline inputs */
+.deadline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Individual deadline input sections */
+.deadline1, .deadline2, .deadline3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; /* Full width */
+}
+
+/* Styling for the save button */
+.save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width:768px) {
+    .deadline{
+        margin: 12px !important;
+    }
+}
