@@ -83,6 +83,10 @@ const signIn = asyncHandler(async (req, res) => {
     if (!leadExist) {
         return res.status(400).send(new ApiError(400, "User does not exist"));
     }
+
+    if (!leadExist.isVerified) {
+        return res.status(403).send(new ApiError(403, "Please verify your account first by Signing Up..."));
+    }
     const validLead = await leadExist.comparePassword(password);
     if (!validLead) {
         return res.status(400).send(new ApiError(400, "Invalid password"));
@@ -93,10 +97,15 @@ const signIn = asyncHandler(async (req, res) => {
     const loggedLead = await Lead.findById(leadExist._id).select("-password");
     let createdCollegeId;
     console.log("loggedLead role", loggedLead.role);
-    if (loggedLead.role === 'admin')
-        createdCollegeId = await CreatedColleges.findOne({ createdBy: leadExist._id }).select("_id");
-    else if (loggedLead.role === 'staff')
-        createdCollegeId = await StaffRegistration.findOne({ createdBy: leadExist._id }).select("collegeId");
+
+    if (loggedLead.role === 'admin') {
+        const result = await CreatedColleges.findOne({ createdBy: leadExist._id }).select("_id");
+        createdCollegeId = result?._id || null;
+    } else if (loggedLead.role === 'staff') {
+        const result = await StaffRegistration.findOne({ createdBy: leadExist._id }).select("collegeId");
+        createdCollegeId = result?.collegeId || null;
+    }
+    console.log("loggedLead role", loggedLead.role);
     console.log("createdCollegeId", createdCollegeId);
     const option = {
         httpOnly: false,
@@ -458,8 +467,9 @@ const assignStudentsToStaff = async (req, res) => {
 };
 
 const getStudentsForStaff = async (req, res) => {
+    const { staffId, collegeId } = req.query;
+    console.log("satff id from getstudetnsfor stafff fun",staffId)
     try {
-        const { staffId, collegeId } = req.query;
 
         const mappings = await StudentStaffMapping.find({
             staff_id: staffId,
@@ -476,7 +486,7 @@ const getStudentsForStaff = async (req, res) => {
 
             console.log(userCollege);
             return {
-                ...student.toObject(), 
+                ...student.toObject(),
                 status: userCollege?.status || 'new',
             };
         }));
